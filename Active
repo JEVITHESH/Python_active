@@ -1,0 +1,121 @@
+1) Write a program that generates a stream of random numbers and writes them to a file.
+
+import random with open(file.txt','w') os file: for i in range(10):
+   file.write(str(random.randint(1,100)))
+file.write("\n")
+file.close()
+
+2. Write a program to read the random numbers from the file created above and calculate their average.
+a=1
+with open('file.txt','r') os file:
+  for i in range(10):
+  k-file.readline() a=av+int(k) 
+print("The Average of all value in the file pl.txt is"a/10) 
+file.close()
+
+3. exist. Write a program that reads from a file and handles the case where the file does not
+
+try: 
+   with open('file.txt','r') os file:    
+       print(file.read()) 
+except FileNotFoundError as e:
+   print("Error! ",e)
+
+
+4. Create a user-defined exception NegativeNumber Error that is raised when a negative number is encountered in a list.
+
+def NegativeNumberError(num):
+  return f"Negative numberencountered: (num)" def check(n):
+   if a < 0: 
+   raise ValueError(NegativeNumberError(n)) return "All numbers are non- negative." num=int(input("Enter a number: ")) 
+try: 
+  a = check(num) print(a) except ValueError as  e
+
+print(e)
+
+5. Create a NumPy array of 10 random numbers and print them.
+
+import random
+ import numpy as np 
+a=[]
+for i in range(10): 
+k-random.randint(1,20) 
+l.append(k) 
+print(np.array(a))
+
+
+6. Write a program to add and remove items from a NumPy array.
+
+import numpy as np
+Import random 
+0=[] 
+for i in range(10): 
+m-random.randint(1,20) 
+l.append(m) 
+n=np.array(1) 
+print(n) 
+while True: 
+    print("l.add\n2.remove\n3.Exit") n=int(input("Enter a number ")) 
+if n==3: 
+  break 
+elif n==1: 
+   k=int(input("Enter a number to print(np.append(n.k)) add:"))
+elif n==2: 
+    k=int(input("Enter a number to
+remove:"))
+print(np.delete(n.k))
+
+
+7. Sort the NumPy array which you created.
+import random import numpy as np a=[]
+for i in range(10): 
+  m-random.randint(1,20) 
+  I.append(m) 
+  n=np.array(1)
+print(n)
+print(np.sort(n))
+
+
+8. Reshape a NumPy array into a 2x5 matrix.
+
+import random
+import numpy as np 
+a=[]
+for i in range(10): 
+   m-random.randint(1,20) 
+   I.append(a) 
+b=np.array(a) 
+print("Normal Array :\n",b)
+print("The reshape of the array is:\n",b.reshape(2,5))
+
+
+9. Demonstrate indexing and slicing on the reshaped matrix.
+
+import random
+import numpy as np 
+a=[] 
+for i in range(10): 
+  k-random.randint(1,20)
+   L.append(k) 
+m=np.array(a) 
+print("Normal array is "m)
+f=m.reshape(2.5) 
+print("Sorted array is: In".f)
+print("Slicing of the array:") 
+print("Specific Value "f[1,2]) 
+print("Range of Value "f[0:2:41)
+
+
+10. Write a program to append new data to an existing file and then read the updated file.
+
+a=int(input("Enter a number to add")) 
+with open('file.txt','a') os f: 
+f.write(str(a)+'\n) 
+print() 
+f.close() with open('file.txt','r') as q 
+p=q.read() 
+I=p.split('\n') 
+print(I[:(len(1)-2)]) 
+q.close()
+
+
